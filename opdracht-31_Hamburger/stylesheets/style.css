@@ -1,0 +1,82 @@
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: lightgrey;
+}
+
+.ham {
+    position: absolute;
+    /* always keep ham on top of everything */
+    z-index: 1000;
+    top: 20px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    /* show the menu image */
+    background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
+    background-size: 100%;
+}
+
+/* change ham image to close */
+.showClose {
+    background-image: url("https://ljc-dev.github.io/testing0/ham-close.svg");
+
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: lightgrey;
+    /* width: 100vw; */
+    width: 100vw; 
+    /* height: 100vh; */
+    height: 176px;
+    overflow: hidden;
+    /* hide the menu above the screen by default */
+    transform: translateY(-100%);
+    /* transition adds a little animation when sliding in and out the menu */
+    transition: transform 0.2s ease;
+}
+
+.showNav {
+    /* show the menu */
+    transform: translateY(0);
+}
+
+.navbar-ul {
+    padding-top: 10px;
+    padding-left: 0px;
+    list-style-type: none;
+    text-align: center;
+    line-height: 1.9;
+}
+
+.menuLink {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    }
+
+.listitem-rood{
+    background: rgb(206, 70, 70);
+}
+
+.listitem-blauw{
+    background: rgb(19, 19, 92);
+}
+
+.listitem-geel{
+    background: rgb(182, 182, 93); 
+}
+
+.listitem-paars{
+    background: rgb(112, 72, 112);
+}
+
+.listitem-reset{
+    background: lightgrey
+}
